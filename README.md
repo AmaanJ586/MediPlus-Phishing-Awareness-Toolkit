@@ -110,6 +110,33 @@ Created three HTML-based phishing awareness simulations for MediPlus Pharmacy em
 - Never share passwords or sensitive information through email.
 - Avoid opening unexpected attachments or following unknown links.
 - Check the sender's identity carefully before taking action.
+  
+
+---
+
+## Task 3 – Phishing Awareness Landing Page
+
+Created a single-page HTML landing page simulating a generic MediPlus Pharmacy staff login portal for cybersecurity awareness training.
+
+### Features
+
+- Username and password input fields.
+- Corporate-style login interface using HTML and CSS.
+- JavaScript hides the login form after submission and displays a **Training Complete** message.
+- No credentials are stored, collected, or transmitted.
+- Includes phishing-awareness guidance to help staff identify suspicious login pages.
+- Includes a visible simulation notice.
+
+### Security
+
+The page operates entirely in the browser. Form submission is prevented from sending data to any server.
+
+**Footer disclaimer:** This is a simulation for MediPlus Pharmacy staff training.
+
+### File
+
+- [index.html](index.html) – Contains the complete HTML, CSS, and JavaScript for the training page.
+
 
 ## Disclaimer
 All three templates are fictional awareness-training examples. They contain no functional phishing links, credential collection forms, or real attachments.
