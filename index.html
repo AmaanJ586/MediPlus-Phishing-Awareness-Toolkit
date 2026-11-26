@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediPlus Pharmacy - Awareness Training</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: #eef2f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #176b56;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .login-box {
+            background: white;
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-box h2 {
+            text-align: center;
+            color: #176b56;
+        }
+
+        .login-box p {
+            text-align: center;
+            color: #666;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #176b56;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #125442;
+        }
+
+        #training-message {
+            display: none;
+            text-align: center;
+            color: #176b56;
+        }
+
+        footer {
+            text-align: center;
+            background: #dce5e8;
+            padding: 15px;
+            font-size: 13px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MediPlus Pharmacy</h1>
+        <p>Staff Portal</p>
+    </header>
+
+    <div class="container">
+
+        <div class="login-box" id="login-box">
+
+            <h2>Staff Login</h2>
+            <p>Please sign in to continue</p>
+
+            <form id="training-form">
+
+                <label for="username">Username</label>
+                <input type="text" id="username"
+                       placeholder="Enter username"
+                       autocomplete="off">
+
+                <label for="password">Password</label>
+                <input type="password" id="password"
+                       placeholder="Enter password"
+                       autocomplete="off">
+
+                <button type="submit">Sign In</button>
+
+            </form>
+
+        </div>
+
+        <div class="login-box" id="training-message">
+
+            <h2>Training Complete!</h2>
+
+            <p>
+                This was a phishing awareness simulation.
+            </p>
+
+            <p>
+                Always verify login pages before entering
+                sensitive information.
+            </p>
+
+            <p>
+                Check the website address and report suspicious
+                login pages to your IT department.
+            </p>
+
+        </div>
+
+    </div>
+
+    <footer>
+        This is a simulation for MediPlus Pharmacy staff training
+    </footer>
+
+    <script>
+        const form = document.getElementById("training-form");
+        const loginBox = document.getElementById("login-box");
+        const trainingMessage =
+            document.getElementById("training-message");
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            loginBox.style.display = "none";
+            trainingMessage.style.display = "block";
+
+        });
+    </script>
+
+</body>
+</html>
