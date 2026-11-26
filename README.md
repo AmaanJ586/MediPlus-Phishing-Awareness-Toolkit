@@ -80,7 +80,39 @@ The script displays failed requests, timestamps, IP addresses, suspicious user a
 - Identifying patterns that may indicate unauthorized access or automated activity.
 - Writing a basic security findings report.
 
+---
+
+## Task 2 – Phishing Awareness Email Templates
+
+Created three HTML-based phishing awareness simulations for MediPlus Pharmacy employees. Each template contains a visible **TRAINING ONLY** banner and HTML comments explaining the psychological triggers used in phishing attacks.
+
+### Templates
+
+### 1. Invoice Template – [invoice_template.html](invoice_template.html)  
+   Demonstrates how attackers may exploit authority and financial pressure through fake invoice notifications.
+
+### 2. Password Reset Template – [password_reset_template.html](password_reset_template.html)  
+   Demonstrates how fear and urgency surrounding account security may pressure employees into unsafe actions.
+
+### 3. Delivery Notification Template – [delivery_template.html](delivery_template.html)  
+   Demonstrates how curiosity and uncertainty about unexpected deliveries may make employees vulnerable to phishing.
+
+### Common Phishing Techniques
+
+- Authority: Impersonating departments such as Accounts or IT Support.
+- Fear and Urgency: Creating concerns about account security or pending actions.
+- Curiosity: Using unexpected delivery notifications to attract attention.
+- Financial Pressure: Using invoices or payment-related concerns to encourage rushed decisions.
+
+### Security Recommendations
+
+- Verify unexpected emails through official communication channels.
+- Never share passwords or sensitive information through email.
+- Avoid opening unexpected attachments or following unknown links.
+- Check the sender's identity carefully before taking action.
+
 ## Disclaimer
+All three templates are fictional awareness-training examples. They contain no functional phishing links, credential collection forms, or real attachments.
 
 This project uses simulated log data for educational and cybersecurity training purposes. The IP addresses and activity patterns are not evidence of real attacks.
 
